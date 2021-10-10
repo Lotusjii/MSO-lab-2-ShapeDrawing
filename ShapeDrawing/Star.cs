@@ -17,7 +17,7 @@ public class Star : Shape
 		this.height = height;
 	}
 
-	public override void Draw (Graphics Canvas)
+	public override void Draw (IOutputable Canvas)
 	{
 		Pen pen = new Pen (Color.Black);
 
@@ -38,14 +38,7 @@ public class Star : Shape
 				Convert.ToInt32(cy + ry * Math.Sin (theta)));
 			theta += dtheta;
 		}
-
-		for (i = 0; i < numPoints; i++) 
-		{
-			Canvas.DrawLine(pen,pts[i].X,
-                                pts[i].Y,
-                                pts[(i+1) % numPoints].X,
-                                pts[(i+1) % numPoints].Y);
-		}
-		
+		Canvas.StartShape("1", "black");
+		Canvas.DrawPolygon(pts);
 	}
 }

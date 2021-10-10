@@ -14,10 +14,9 @@ class Circle : Shape
 		this.size = size;
     }
 
-    public override void Draw(Graphics Canvas)
+    public override void Draw(IOutputable Canvas)
     {
-		Pen pen = new Pen(Color.Black);
-        Canvas.DrawEllipse(pen, this.x, this.y, this.size, this.size);
+        Canvas.StartShape("1", "black");
+        Canvas.DrawEllipse(this.x, this.y, this.size, this.size);
     }
-
 }

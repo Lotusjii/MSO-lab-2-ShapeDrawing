@@ -7,6 +7,6 @@ public abstract class Shape
 	{
 	}
 
-    public abstract void Draw(Graphics Canvas);
+    public abstract void Draw(IOutputable Canvas);
 	
 }

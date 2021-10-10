@@ -57,23 +57,43 @@ public class ShapeDrawingForm : Form
     // What to do when the user wants to export a SVG file
 	private void exportHandler (object sender, EventArgs e)
 	{
+		ShapeConverter converter;
 		Stream stream;
 		SaveFileDialog saveFileDialog = new SaveFileDialog();
 
-		saveFileDialog.Filter = "SVG files|(*.svg)";
+		saveFileDialog.Filter = "SVG files|*.svg|TikZ files|*.tikz";
 		saveFileDialog.RestoreDirectory = true;
 		
 		if(saveFileDialog.ShowDialog() == DialogResult.OK)
 		{
 			if((stream = saveFileDialog.OpenFile()) != null)
 			{
-				// Insert code here that generates the string of SVG
-                //   commands to draw the shapes
-                using(StreamWriter writer = new StreamWriter(stream))
+				string[] str = saveFileDialog.FileName.Split('.');
+				string st = str[str.Length - 1];
+
+				if (st == "svg")
                 {
-                        // Write strings to the file here using:
-                        //   writer.WriteLine("Hello World!");
-                }				
+					converter = new SVGConverter();
+                } 
+				else if (st == "tikz")
+                {
+					converter = new TikZConverter();
+                }
+                else
+                {
+					throw new Exception("No svg or tikz file.");
+                }
+				using (StreamWriter writer = new StreamWriter(stream))
+                {
+					foreach (Shape shape in shapes)
+						shape.Draw(converter);
+					converter.EndFile();
+					
+					for (int i = 0; i < converter.shapeStrings.Count; i++)
+                    {
+						writer.WriteLine(converter.shapeStrings[i]);
+                    }
+				}				
 			}
 		}
 	}
@@ -82,6 +102,6 @@ public class ShapeDrawingForm : Form
 	{
 		// Draw all the shapes
 		foreach(Shape shape in shapes)
-			shape.Draw(e.Graphics);
+			shape.Draw(new Drawdapter(e.Graphics));
 	}
 }
