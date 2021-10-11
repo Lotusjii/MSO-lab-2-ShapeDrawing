@@ -18,7 +18,7 @@ class Rectangle : Shape
     
 	public override void Draw(IOutputable Canvas)
     {
-		Point[] points = new Point[] { new Point(x, y), new Point(x + width, y), new Point(x + width, y + height), new Point(x, y + height), new Point(x, y) };
+		Point[] points = new Point[] { new Point(x, y), new Point(x + width, y), new Point(x + width, y + height), new Point(x, y + height)};
 		Canvas.StartShape("1", "black");
 		Canvas.DrawPolygon(points);
     }

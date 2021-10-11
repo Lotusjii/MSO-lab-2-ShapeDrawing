@@ -14,3 +14,11 @@ C:\Users\sebas\OneDrive\Documenten\Uni\MSO\MSO-lab-2-ShapeDrawing\ShapeDrawing\o
 C:\Users\sebas\OneDrive\Documenten\Uni\MSO\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.csproj.CoreCompileInputs.cache
 C:\Users\sebas\OneDrive\Documenten\Uni\MSO\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.exe
 C:\Users\sebas\OneDrive\Documenten\Uni\MSO\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.pdb
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\bin\Debug\ShapeDrawing.exe
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\bin\Debug\ShapeDrawing.pdb
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.csproj.AssemblyReference.cache
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.Properties.Resources.resources
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.csproj.GenerateResource.cache
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.exe
+C:\Users\sebas\Documents\GitHub\MSO-lab-2-ShapeDrawing\ShapeDrawing\obj\x86\Debug\ShapeDrawing.pdb

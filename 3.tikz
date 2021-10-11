@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+
+\draw (7,12) ellipse (2cm and 2cm);
+\draw (15,10) -- (25,10) -- (25,15) -- (15,15) -- cycle;
+\draw (6,5) -- (7,7) -- (5,6) -- (7,6) -- (5,7) -- cycle;
+\end{tikzpicture}
+\end{document}
